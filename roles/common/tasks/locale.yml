@@ -1,0 +1,3 @@
+- name: Generate default locale
+  locale_gen: name={{default_locale_lang}} state=present
+  tags: generate_default_locale

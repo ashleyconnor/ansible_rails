@@ -1,0 +1,11 @@
+---
+- hosts: all
+  user: vagrant
+  gather_facts: False
+  sudo: yes
+  vars:
+    timezone: America/Toronto
+    default_locale_lang: en_GB.UTF-8
+  roles:
+    -
+      role: common

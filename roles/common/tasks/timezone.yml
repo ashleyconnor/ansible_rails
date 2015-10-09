@@ -1,0 +1,11 @@
+---
+- name: Configure Timezone
+  copy: content='{{timezone}}\n'
+        dest=/etc/timezone
+        owner=root
+        group=root
+        mode=0644
+        backup=yes
+  notify:
+    - update timezone
+  tags: timezone

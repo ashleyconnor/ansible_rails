@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: vagrant
+  gather_facts: False
+  vars:
+    timezone: America/Toronto
+  roles:
+    -
+      role: common
