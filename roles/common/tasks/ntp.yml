@@ -1,8 +1,8 @@
 ---
 - name: Install NTP Daemon
   apt: pkg=ntp state=latest
-  tags: ntp
+  tags: ntp.install.daemon
 
 - name: Setting NTP on boot
   service: name=ntp state=started enabled=yes
-  tags: ntp
+  tags: ntp.start.boot

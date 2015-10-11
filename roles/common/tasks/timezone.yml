@@ -8,4 +8,4 @@
         backup=yes
   notify:
     - update timezone
-  tags: timezone
+  tags: timezone.configure
